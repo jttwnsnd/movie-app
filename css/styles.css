@@ -1,6 +1,130 @@
-/* line 5, ../compass/sass/styles.scss */
+/* line 14, ../compass/sass/_variables.scss */
+.big-font, .header {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+*/
+/* line 38, ../compass/sass/components/_misc.scss */
+.base-font, .container .col {
+  font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+/* line 6, ../compass/sass/layout/_header.scss */
+.header {
+  width: 100%;
+  background-color: #999;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 15, ../compass/sass/layout/_header.scss */
+input.search {
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* line 21, ../compass/sass/layout/_header.scss */
+.btn {
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* line 6, ../compass/sass/layout/_footer.scss */
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  background-color: blue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 10, ../compass/sass/styles.scss */
 body {
   width: 100%;
   margin: 0px;
   background-color: #ddd;
+}
+
+/* line 17, ../compass/sass/styles.scss */
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 23, ../compass/sass/styles.scss */
+.container.after-header {
+  margin-top: 80px;
+}
+/* line 26, ../compass/sass/styles.scss */
+.container .col {
+  width: 14.66667%;
+  margin: 2% 1%;
+  float: left;
+  color: #000;
+  height: 350px;
+  margin: 1%;
+  position: relative;
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+}
+/* line 38, ../compass/sass/styles.scss */
+.container .col img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.4s;
+  overflow: visible;
+}
+/* line 49, ../compass/sass/styles.scss */
+.container figure:hover img {
+  transform: translateZ(160px) translateX(90px) rotateY(90deg) rotateZ(-90deg);
+}
+/* line 52, ../compass/sass/styles.scss */
+.container figure:hover figcaption {
+  bottom: 100px;
+}
+/* line 55, ../compass/sass/styles.scss */
+.container figcaption {
+  bottom: 120px;
+  width: 100%;
+  position: absolute;
+  transition: all .5s;
+  height: 100px;
+}
+/* line 61, ../compass/sass/styles.scss */
+.container figcaption h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 14px;
+}
+/* line 66, ../compass/sass/styles.scss */
+.container figcaption span {
+  font-size: 12px;
+  font-weight: none;
+  padding-top: 20px;
 }
