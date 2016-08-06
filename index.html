@@ -4,10 +4,15 @@
 	<title>Movie App - jQuery/SASS style </title>
 
 	<link rel="stylesheet" href="css/reset.css">
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+
 
 	<!-- include jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
 	<!-- Custom script -->
 	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
@@ -16,6 +21,32 @@
 	<div class="header">
 		<div class="header-wrapper">
 			<h1 class="big-font">Movie App</h1>
+			<div class="selections">
+				<div class='selector'>Now Playing</div>
+				<div class='selector'>Popular</div>
+				<div class='selector'>Upcoming</div>
+			</div>
+			<div class="slider-wrapper np">
+				<div class="now-playing">
+					<ul class="bxslider-np">
+					<!-- jQuery, put this in, man!!! -->
+					</ul>
+				</div>
+			</div>
+			<div class="slider-wrapper pop">
+				<div class="popular">
+					<ul class="bxslider-pop">
+					<!-- jQuery, put this in, man!!! -->
+					</ul>
+				</div>
+			</div>
+			<div class="slider-wrapper upcoming">
+				<div class="upcoming">
+					<ul class="bxslider-upcoming">
+					<!-- jQuery, put this in, man!!! -->
+					</ul>
+				</div>
+			</div>
 			<form class="input-form">
 				<input type="text" class="search" placeholder="Search for a movie title">
 				<button type="submit" class="btn">Search</button>

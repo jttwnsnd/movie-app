@@ -1,5 +1,5 @@
 /* line 14, ../compass/sass/_variables.scss */
-.big-font, .header {
+.big-font {
   font-size: 80px;
   font-weight: bold;
 }
@@ -25,19 +25,41 @@
 .header {
   width: 100%;
   background-color: #999;
-  height: 150px;
+  height: 700px;
   padding: 20px;
   text-align: center;
+  position: relative;
+}
+/* line 15, ../compass/sass/layout/_header.scss */
+.header .header-wrapper .selections .selector {
+  background-color: #afc8e6;
+  width: 100px;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+}
+/* line 26, ../compass/sass/layout/_header.scss */
+.header .slider-wrapper {
+  margin-top: 20px;
+  width: 30%;
+  display: inline-block;
+  transition: all .5s;
+}
+/* line 32, ../compass/sass/layout/_header.scss */
+.header .np, .header .pop, .header .upcoming {
+  opacity: 0;
 }
 
-/* line 15, ../compass/sass/layout/_header.scss */
+/* line 37, ../compass/sass/layout/_header.scss */
 input.search {
   width: 200px;
   padding: 5px;
   border-radius: 5px;
 }
 
-/* line 21, ../compass/sass/layout/_header.scss */
+/* line 43, ../compass/sass/layout/_header.scss */
 .btn {
   padding: 5px 15px;
   text-align: center;
@@ -65,7 +87,12 @@ body {
   background-color: #ddd;
 }
 
-/* line 17, ../compass/sass/styles.scss */
+/* line 16, ../compass/sass/styles.scss */
+.display {
+  opacity: 1;
+}
+
+/* line 20, ../compass/sass/styles.scss */
 .container {
   width: 90%;
   margin: auto;
@@ -73,11 +100,11 @@ body {
   overflow: hidden;
   text-align: center;
 }
-/* line 23, ../compass/sass/styles.scss */
+/* line 26, ../compass/sass/styles.scss */
 .container.after-header {
   margin-top: 80px;
 }
-/* line 26, ../compass/sass/styles.scss */
+/* line 29, ../compass/sass/styles.scss */
 .container .col {
   width: 14.66667%;
   margin: 2% 1%;
@@ -88,8 +115,9 @@ body {
   position: relative;
   transform-origin: 0 0;
   transform-style: preserve-3d;
+  perspective: 1500px;
 }
-/* line 38, ../compass/sass/styles.scss */
+/* line 42, ../compass/sass/styles.scss */
 .container .col img {
   height: 100%;
   width: 100%;
@@ -100,29 +128,29 @@ body {
   transition: transform 0.4s;
   overflow: visible;
 }
-/* line 49, ../compass/sass/styles.scss */
+/* line 53, ../compass/sass/styles.scss */
 .container figure:hover img {
-  transform: translateZ(160px) translateX(90px) rotateY(90deg) rotateZ(-90deg);
+  transform: translateZ(160px) translateY(-80px) rotateX(75deg);
 }
-/* line 52, ../compass/sass/styles.scss */
+/* line 56, ../compass/sass/styles.scss */
 .container figure:hover figcaption {
   bottom: 100px;
 }
-/* line 55, ../compass/sass/styles.scss */
+/* line 59, ../compass/sass/styles.scss */
 .container figcaption {
-  bottom: 120px;
+  bottom: 140px;
   width: 100%;
   position: absolute;
   transition: all .5s;
   height: 100px;
 }
-/* line 61, ../compass/sass/styles.scss */
+/* line 65, ../compass/sass/styles.scss */
 .container figcaption h4 {
   font-size: 18px;
   font-weight: bold;
   margin: 14px;
 }
-/* line 66, ../compass/sass/styles.scss */
+/* line 70, ../compass/sass/styles.scss */
 .container figcaption span {
   font-size: 12px;
   font-weight: none;
